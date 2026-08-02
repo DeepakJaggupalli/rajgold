@@ -66,6 +66,25 @@ export default function TrustSection() {
                 </div>
               ))}
             </div>
+
+            {/* Managing Director Profile */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mt-10 p-6 bg-[#FDFBF7] rounded-2xl border-2 border-gold-classic/40 flex flex-col sm:flex-row items-center sm:items-start gap-6"
+            >
+              <div className="w-24 h-24 rounded-full overflow-hidden shrink-0 border-[3px] border-emerald-deep shadow-lg">
+                <img src="/md.jpg" alt="Managing Director" className="w-full h-full object-cover" />
+              </div>
+              <div className="text-center sm:text-left">
+                <h4 className="text-2xl font-bold text-emerald-deep">Deepak Jaggupalli</h4>
+                <p className="text-gold-hover font-bold text-sm uppercase tracking-wide mt-1">Managing Director</p>
+                <p className="text-gray-600 mt-3 text-sm italic font-medium leading-relaxed">
+                  "Our unwavering commitment to absolute purity and transparency has made Raj Gold the most trusted destination for premium wealth preservation in India."
+                </p>
+              </div>
+            </motion.div>
           </div>
 
         </div>
