@@ -25,7 +25,7 @@ export default function TrustSection() {
             <div className="relative aspect-[4/5] w-full max-w-[450px] mx-auto rounded-[2rem] overflow-hidden border-[8px] border-gold-classic shadow-2xl group">
               <img src="/md.jpg" alt="Managing Director" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-deep/90 via-transparent to-transparent flex flex-col justify-end p-8">
-                <h4 className="text-3xl font-bold text-white mb-1">Deepak Jaggupalli</h4>
+                <h4 className="text-3xl font-bold text-white mb-1">Sagi Ramesh Babu</h4>
                 <p className="text-gold-classic font-bold text-sm uppercase tracking-widest">Managing Director</p>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function TrustSection() {
             >
               <img src="/md.jpg" alt="Managing Director" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-deep/90 via-transparent flex flex-col justify-end p-6">
-                <h4 className="text-2xl font-bold text-white mb-1">Deepak Jaggupalli</h4>
+                <h4 className="text-2xl font-bold text-white mb-1">Sagi Ramesh Babu</h4>
                 <p className="text-gold-classic font-bold text-xs uppercase tracking-widest">Managing Director</p>
               </div>
             </motion.div>
