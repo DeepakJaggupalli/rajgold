@@ -57,8 +57,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800 mb-1 text-lg">Email Support</h4>
-                    <a href="mailto:rajgoldtrader7569@gmail.com" className="text-gray-600 text-sm font-medium hover:text-emerald-deep hover:underline">
-                      rajgoldtrader7569@gmail.com
+                    <a href="mailto:rajgoldtrade7569@gmail.com" className="text-gray-600 text-sm font-medium hover:text-emerald-deep hover:underline">
+                      rajgoldtrade7569@gmail.com
                     </a>
                   </div>
                 </li>
@@ -77,7 +77,7 @@ export default function Contact() {
           {/* Form */}
           <div className="bg-[#FDFBF7] p-8 md:p-10 rounded-3xl border-2 border-gold-classic/40 relative">
             <h3 className="text-2xl font-bold font-sans text-emerald-deep mb-6">Request Callback</h3>
-            <form action="mailto:rajgoldtrader7569@gmail.com" method="POST" encType="text/plain" className="space-y-6">
+            <form action="mailto:rajgoldtrade7569@gmail.com" method="POST" encType="text/plain" className="space-y-6">
               <div className="space-y-2">
                 <label className="text-sm font-bold text-gray-700">Full Name</label>
                 <input 
