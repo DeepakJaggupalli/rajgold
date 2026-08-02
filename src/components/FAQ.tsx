@@ -20,7 +20,7 @@ export default function FAQ() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           
-          <div className="space-y-6 sticky top-32">
+          <div className="space-y-6 lg:sticky lg:top-32">
             <h2 className="text-4xl md:text-5xl font-sans font-bold text-emerald-deep leading-tight">
               Frequently Asked <br/>
               <span className="text-gold-hover">Questions</span>

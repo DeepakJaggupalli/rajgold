@@ -5,9 +5,8 @@ import { motion } from "framer-motion";
 export default function TrustSection() {
   const stats = [
     { label: "Satisfied Investors", value: "100+" },
-    { label: "Years Heritage", value: "25+" },
-    { label: "Premium Showrooms", value: "24" },
-    { label: "Gold Delivered", value: "5000+ kg" },
+    { label: "Years Experience", value: "10+" },
+    { label: "Gold Delivered", value: "20+ kg" },
   ];
 
   return (
