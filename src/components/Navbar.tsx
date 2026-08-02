@@ -62,7 +62,7 @@ export default function Navbar() {
 
         {/* CTAs */}
         <div className="hidden lg:flex items-center gap-4">
-          <Link href="tel:+1234567890">
+          <Link href="tel:+917416966659">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -101,7 +101,7 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Link href="tel:+1234567890" onClick={() => setMobileMenuOpen(false)}>
+          <Link href="tel:+917416966659" onClick={() => setMobileMenuOpen(false)}>
             <button className="mt-4 bg-gold-classic text-emerald-deep px-8 py-3 rounded-full font-bold flex items-center gap-2">
               <PhoneCall size={20} />
               Call Now

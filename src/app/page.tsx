@@ -55,7 +55,7 @@ export default function Home() {
       <div className="fixed bottom-8 right-8 z-50 flex flex-col gap-4">
         {/* WhatsApp */}
         <motion.a
-          href="https://wa.me/1234567890"
+          href="https://wa.me/917416966659"
           target="_blank"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
