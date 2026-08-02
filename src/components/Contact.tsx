@@ -77,11 +77,13 @@ export default function Contact() {
           {/* Form */}
           <div className="bg-[#FDFBF7] p-8 md:p-10 rounded-3xl border-2 border-gold-classic/40 relative">
             <h3 className="text-2xl font-bold font-sans text-emerald-deep mb-6">Request Callback</h3>
-            <form className="space-y-6">
+            <form action="mailto:rajgoldtrader7569@gmail.com" method="POST" encType="text/plain" className="space-y-6">
               <div className="space-y-2">
                 <label className="text-sm font-bold text-gray-700">Full Name</label>
                 <input 
                   type="text" 
+                  name="Full Name"
+                  required
                   className="w-full bg-white border-2 border-gray-200 rounded-xl px-4 py-3 text-gray-800 focus:outline-none focus:border-emerald-deep transition-colors"
                   placeholder="John Doe"
                 />
@@ -90,13 +92,15 @@ export default function Contact() {
                 <label className="text-sm font-bold text-gray-700">Phone Number</label>
                 <input 
                   type="tel" 
+                  name="Phone Number"
+                  required
                   className="w-full bg-white border-2 border-gray-200 rounded-xl px-4 py-3 text-gray-800 focus:outline-none focus:border-emerald-deep transition-colors"
                   placeholder="+91 98765 43210"
                 />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-bold text-gray-700">Investment Interest</label>
-                <select className="w-full bg-white border-2 border-gray-200 rounded-xl px-4 py-3 text-gray-800 focus:outline-none focus:border-emerald-deep transition-colors appearance-none font-medium">
+                <select name="Investment Interest" className="w-full bg-white border-2 border-gray-200 rounded-xl px-4 py-3 text-gray-800 focus:outline-none focus:border-emerald-deep transition-colors appearance-none font-medium">
                   <option>1g - 10g Gold Bars</option>
                   <option>50g - 100g Gold Bars</option>
                   <option>Bulk Corporate Orders</option>
@@ -104,6 +108,7 @@ export default function Contact() {
                 </select>
               </div>
               <motion.button
+                type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="w-full bg-emerald-deep text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-emerald-dark transition-all shadow-lg"
