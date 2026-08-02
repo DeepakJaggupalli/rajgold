@@ -37,9 +37,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden bg-[#eaddbe] flex items-center justify-center shadow-lg shrink-0">
-            <img src="/logo.jpg" alt="Raj Gold" className="w-[85%] h-[85%] object-contain" />
-          </div>
+          <img src="/logo.jpg" alt="Raj Gold" className="w-14 h-14 md:w-16 md:h-16 object-cover rounded-full shadow-[0_0_15px_rgba(212,175,55,0.4)] border border-gold-classic/50 shrink-0" />
           <motion.div 
             whileHover={{ scale: 1.05 }}
             className="text-2xl md:text-3xl font-playfair font-bold text-white tracking-wide hidden sm:block"

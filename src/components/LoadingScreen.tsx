@@ -46,9 +46,7 @@ export default function LoadingScreen() {
                   animate={{ rotate: 360 }}
                   transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
                 />
-                <div className="w-full h-full rounded-full bg-[#eaddbe] flex items-center justify-center relative overflow-hidden z-10">
-                  <img src="/logo.jpg" alt="Raj Gold Logo" className="w-[85%] h-[85%] object-contain" />
-                </div>
+                <img src="/logo.jpg" alt="Raj Gold Logo" className="w-full h-full object-cover rounded-full relative z-10" />
               </div>
             </motion.div>
 

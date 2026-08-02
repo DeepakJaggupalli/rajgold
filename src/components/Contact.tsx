@@ -46,8 +46,9 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800 mb-1 text-lg">Call Us (24/7)</h4>
-                    <p className="text-gray-600 text-sm font-medium">+91 98765 43210</p>
-                    <p className="text-gray-600 text-sm font-medium">1800 123 4567 (Toll Free)</p>
+                    <a href="tel:+917416966659" className="text-gray-600 text-sm font-medium hover:text-emerald-deep hover:underline">
+                      +91 74169 66659
+                    </a>
                   </div>
                 </li>
                 <li className="flex items-start gap-4 group">
@@ -55,8 +56,10 @@ export default function Contact() {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-800 mb-1 text-lg">Email Us</h4>
-                    <p className="text-gray-600 text-sm font-medium">sales@rajgold.com</p>
+                    <h4 className="font-bold text-gray-800 mb-1 text-lg">Email Support</h4>
+                    <a href="mailto:rajgoldtrader7569@gmail.com" className="text-gray-600 text-sm font-medium hover:text-emerald-deep hover:underline">
+                      rajgoldtrader7569@gmail.com
+                    </a>
                   </div>
                 </li>
               </ul>

@@ -12,9 +12,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="space-y-6">
           <Link href="/" className="inline-flex items-center gap-3">
-            <div className="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden bg-[#eaddbe] flex items-center justify-center shadow-lg shrink-0">
-              <img src="/logo.jpg" alt="Raj Gold" className="w-[85%] h-[85%] object-contain" />
-            </div>
+            <img src="/logo.jpg" alt="Raj Gold" className="w-12 h-12 md:w-14 md:h-14 object-cover rounded-full shadow-[0_0_10px_rgba(212,175,55,0.4)] border border-gold-classic/50 shrink-0" />
             <span className="text-3xl font-sans font-bold text-white tracking-wide">
               RAJ GOLD
             </span>
@@ -75,11 +73,11 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-3 text-white/80 text-sm font-medium">
               <Phone className="text-gold-classic shrink-0" size={18} />
-              <span>+91 98765 43210</span>
+              <a href="tel:+917416966659" className="hover:text-gold-classic transition-colors">+91 74169 66659</a>
             </li>
             <li className="flex items-center gap-3 text-white/80 text-sm font-medium">
               <Mail className="text-gold-classic shrink-0" size={18} />
-              <span>sales@rajgold.com</span>
+              <a href="mailto:rajgoldtrader7569@gmail.com" className="hover:text-gold-classic transition-colors">rajgoldtrader7569@gmail.com</a>
             </li>
           </ul>
         </div>
