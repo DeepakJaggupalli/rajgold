@@ -77,12 +77,23 @@ export default function TrustSection() {
               <div className="w-24 h-24 rounded-full overflow-hidden shrink-0 border-[3px] border-emerald-deep shadow-lg">
                 <img src="/md.jpg" alt="Managing Director" className="w-full h-full object-cover" />
               </div>
-              <div className="text-center sm:text-left">
+              <div className="text-center sm:text-left flex-1">
                 <h4 className="text-2xl font-bold text-emerald-deep">Deepak Jaggupalli</h4>
                 <p className="text-gold-hover font-bold text-sm uppercase tracking-wide mt-1">Managing Director</p>
-                <p className="text-gray-600 mt-3 text-sm italic font-medium leading-relaxed">
+                <p className="text-gray-600 mt-3 text-sm italic font-medium leading-relaxed mb-4">
                   "Our unwavering commitment to absolute purity and transparency has made Raj Gold the most trusted destination for premium wealth preservation in India."
                 </p>
+                
+                {/* Business Portfolio */}
+                <div className="pt-4 border-t border-gray-200">
+                  <p className="text-xs font-bold text-emerald-deep/60 uppercase tracking-wider mb-2">Leadership Portfolio</p>
+                  <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
+                    <span className="text-[10px] md:text-xs bg-emerald-deep/5 border border-emerald-deep/20 text-emerald-deep px-2.5 py-1 rounded-md font-bold">Raj Gold</span>
+                    <span className="text-[10px] md:text-xs bg-emerald-deep/5 border border-emerald-deep/20 text-emerald-deep px-2.5 py-1 rounded-md font-bold">Infrastructure & Constructions</span>
+                    <span className="text-[10px] md:text-xs bg-emerald-deep/5 border border-emerald-deep/20 text-emerald-deep px-2.5 py-1 rounded-md font-bold">Civil & Electrical Works</span>
+                    <span className="text-[10px] md:text-xs bg-emerald-deep/5 border border-emerald-deep/20 text-emerald-deep px-2.5 py-1 rounded-md font-bold">Transport</span>
+                  </div>
+                </div>
               </div>
             </motion.div>
           </div>
