@@ -43,7 +43,7 @@ export default function Footer() {
         <div className="space-y-6">
           <h4 className="text-xl font-bold text-gold-classic">Quick Links</h4>
           <ul className="space-y-3">
-            {["Home", "About Us", "Buy Gold Bars", "Testimonials", "Contact"].map((link) => (
+            {["Home", "About Us", "Buy Gold Bars", "Live Rates", "Contact"].map((link) => (
               <li key={link}>
                 <Link href="#" className="text-white/80 hover:text-gold-classic transition-colors text-sm flex items-center gap-2 font-medium">
                   <span className="w-2 h-2 rounded-full bg-gold-classic"></span>
