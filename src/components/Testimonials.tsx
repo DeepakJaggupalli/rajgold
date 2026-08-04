@@ -1,18 +1,44 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { TrendingUp } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 export default function Testimonials() {
+  const container = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Only inject if it hasn't been injected yet
+    if (container.current && container.current.children.length === 0) {
+      const script = document.createElement("script");
+      script.src = "https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js";
+      script.type = "text/javascript";
+      script.async = true;
+      script.innerHTML = `
+        {
+          "symbol": "OANDA:XAUUSD",
+          "width": "100%",
+          "height": "100%",
+          "locale": "en",
+          "dateRange": "1M",
+          "colorTheme": "dark",
+          "isTransparent": true,
+          "autosize": true,
+          "largeChartUrl": ""
+        }
+      `;
+      container.current.appendChild(script);
+    }
+  }, []);
+
   return (
     <section className="py-24 relative bg-emerald-deep" id="live-rates">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-sans font-bold text-white">
-            Live Gold Rates Launching Soon
+            Live Gold Rates
           </h2>
           <p className="text-white/90 text-lg font-medium">
-            Stay tuned for real-time precious metal pricing, charts, and market analytics directly from our trading desk.
+            Track real-time global gold spot prices (XAU/USD) directly on our platform.
           </p>
         </div>
 
@@ -21,15 +47,9 @@ export default function Testimonials() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-emerald-dark p-8 md:p-12 rounded-[2rem] border-4 border-gold-classic flex flex-col items-center text-center shadow-2xl max-w-2xl w-full"
+            className="bg-emerald-dark p-6 md:p-8 rounded-[2rem] border-4 border-gold-classic shadow-2xl w-full h-[350px] overflow-hidden"
           >
-            <div className="w-20 h-20 rounded-full bg-gold-classic flex items-center justify-center text-emerald-deep mb-6">
-              <TrendingUp size={40} />
-            </div>
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Market Data Coming Soon</h3>
-            <p className="text-white/80 leading-relaxed font-medium">
-              We are integrating real-time spot prices for Gold (999.9), Silver, and other precious metals. Our advanced charting and analytics tools will be available shortly.
-            </p>
+            <div className="w-full h-full" ref={container}></div>
           </motion.div>
         </div>
       </div>
