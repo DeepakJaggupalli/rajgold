@@ -40,6 +40,7 @@ export default function Testimonials() {
           <p className="text-white/90 text-lg font-medium">
             Track real-time Gold spot prices in INR directly on our platform. <br className="hidden md:block" />
             <span className="text-gold-classic/80 text-sm md:text-base mt-2 block">*Prices shown are for 1 Troy Ounce (~31.1 grams)</span>
+            <span className="text-emerald-400 font-medium text-sm md:text-base mt-1 block">More local live rates (1g, 10g) will be launching soon!</span>
           </p>
         </div>
 
