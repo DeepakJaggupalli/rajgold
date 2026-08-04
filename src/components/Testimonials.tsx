@@ -15,7 +15,7 @@ export default function Testimonials() {
       script.async = true;
       script.innerHTML = `
         {
-          "symbol": "MCX:GOLD1!",
+          "symbol": "FX_IDC:XAUINR",
           "width": "100%",
           "height": "100%",
           "locale": "en",
@@ -38,7 +38,7 @@ export default function Testimonials() {
             Live Gold Rates
           </h2>
           <p className="text-white/90 text-lg font-medium">
-            Track real-time Gold prices in INR (per 10g) directly on our platform.
+            Track real-time Gold spot prices in INR directly on our platform.
           </p>
         </div>
 
