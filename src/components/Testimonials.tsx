@@ -15,7 +15,7 @@ export default function Testimonials() {
       script.async = true;
       script.innerHTML = `
         {
-          "symbol": "OANDA:XAUUSD",
+          "symbol": "MCX:GOLD1!",
           "width": "100%",
           "height": "100%",
           "locale": "en",
@@ -38,7 +38,7 @@ export default function Testimonials() {
             Live Gold Rates
           </h2>
           <p className="text-white/90 text-lg font-medium">
-            Track real-time global gold spot prices (XAU/USD) directly on our platform.
+            Track real-time Gold prices in INR (per 10g) directly on our platform.
           </p>
         </div>
 
